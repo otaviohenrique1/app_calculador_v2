@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>App Calculador v1</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center">App Calculador v1</h1>
+      </div>
+      <div class="col-12 pb-2">
+        <div class="input-group">
+          <label class="input-group-text">Nome</label>
+          <input type="text" class="form-control" id="campo_nome">
+        </div>
+      </div>
+      <div class="col-12 pb-2">
+        <div class="input-group">
+          <label class="input-group-text">Campo A</label>
+          <input type="number" class="form-control" id="campo_a">
+        </div>
+      </div>
+      <div class="col-12 pb-2">
+        <div class="input-group">
+          <label class="input-group-text">Campo B</label>
+          <input type="number" class="form-control" id="campo_b">
+        </div>
+      </div>
+      <div class="col-12 pb-5">
+        <div class="input-group">
+          <label class="input-group-text">Campo C</label>
+          <input type="number" class="form-control" id="campo_c">
+        </div>
+      </div>
+      <div class="col-12 pb-5">
+        <h2 class="text-center">Resultado:</h2>
+        <h3 class="text-center" id="resultado">0,0</h3>
+      </div>
+      <div class="col-12 text-center">
+        <div class="btn-group">
+          <button id="btn_calcular" class="btn btn-primary">Calcular</button>
+          <button id="btn_limpar" class="btn btn-danger">Limpar</button>
+          <button id="btn_ajuda" class="btn btn-info">Ajuda</button>
+        </div>
+      </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./build/src/renderer.js"></script>
+  </body>
+</html>

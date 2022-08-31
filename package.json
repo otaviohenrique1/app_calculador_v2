@@ -1,0 +1,29 @@
+{
+  "name": "app_calculador_v2",
+  "version": "1.0.0",
+  "description": "App calculador",
+  "main": "./build/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && electron ."
+  },
+  "keywords": [
+    "Javascript",
+    "Nodejs",
+    "Electron",
+    "HTML",
+    "CSS3",
+    "Bootstrap",
+    "Jquery"
+  ],
+  "author": "Otavio",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.1.0",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "jquery": "^3.6.1"
+  }
+}
